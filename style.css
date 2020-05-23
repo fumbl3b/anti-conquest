@@ -3,17 +3,6 @@
   font-family: 'Jura', sans-serif;
 }
 
-@media only screen and (max-width: 767px)
-{
-    .fixed, .fixed-large
-    {
-        display: block; 
-        float: none; 
-        width: 100%;
-        padding: 20px 0;
-    }
-}
-
 h1, h2 {
   text-align: right;
 }
@@ -28,7 +17,7 @@ footer {
 }
 
 #wrapper {
-  padding: 30px;
+  padding: 35px;
   background: #fff;
   color:#000;
 }
@@ -59,7 +48,6 @@ img {
 
 .container, .fixed, .fixed-large {
   margin:10px;
-  min-width:300px;
 }
 
 .dataBlock {
@@ -84,14 +72,27 @@ img {
 }
 
 .fixed{
-  width: 30%;
+  width: 35%;
+  min-width:200px;
   float:left;
 }
 
 .fixed-large{
-  width: 70%;
+  width: 65%;
+  min-width:300px;
   float:right;
 }
 .flex-item{
     flex-grow: 1;
+}
+
+@media only screen and (max-width: 767px)
+{
+    .fixed, .fixed-large, .container
+    {
+        display: block; 
+        float: left; 
+        width: 100%;
+        padding: 10px 0;
+    }
 }
