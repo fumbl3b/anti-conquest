@@ -9,7 +9,7 @@ h1, h2 {
 
 body {
   height: 100%;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 footer {
@@ -43,11 +43,11 @@ a:visited {
 img {
   max-width: 100%; 
   max-height: 100%;
-  padding:0px;
+  padding:3px;
 }
 
 .container, .fixed, .fixed-large {
-  margin:30px;
+  margin:20px;
 }
 
 .dataBlock {
@@ -57,7 +57,7 @@ img {
 .imageBlock {
   width:100px;
   height:100px;
-  margin: 5px;
+  margin: 2px;
 }
 
 .container{
@@ -71,10 +71,10 @@ img {
 }
 
 .fixed{
-    width: 400px;
+    width: 300px;
 }
 .fixed-large{
-  width: 1000px;
+  width: 500px;
 }
 .flex-item{
     flex-grow: 1;
