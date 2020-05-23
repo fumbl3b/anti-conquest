@@ -15,6 +15,14 @@
 		"oAP": "/build/build",
 		"oF": 0
 		},
+	"/gallery.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/gallery.html",
+		"oF": 0
+		},
 	"/images/dog1.jpg": {
 		"ft": 16384,
 		"iS": 229955,
