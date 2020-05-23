@@ -3,6 +3,17 @@
   font-family: 'Jura', sans-serif;
 }
 
+@media only screen and (max-width: 767px)
+{
+    .fixed, .fixed-large
+    {
+        display: block; 
+        float: none; 
+        width: 100%;
+        padding: 20px 0;
+    }
+}
+
 h1, h2 {
   text-align: right;
 }
@@ -47,7 +58,8 @@ img {
 }
 
 .container, .fixed, .fixed-large {
-  margin:20px;
+  margin:10px;
+  min-width:300px;
 }
 
 .dataBlock {
@@ -58,10 +70,11 @@ img {
   width:100px;
   height:100px;
   margin: 2px;
+  display: flex;
 }
 
 .container{
-    display: flex;
+  display: flex;
 }
 
 .smallContainer {
@@ -71,10 +84,13 @@ img {
 }
 
 .fixed{
-    width: 300px;
+  width: 30%;
+  float:left;
 }
+
 .fixed-large{
-  width: 500px;
+  width: 70%;
+  float:right;
 }
 .flex-item{
     flex-grow: 1;
