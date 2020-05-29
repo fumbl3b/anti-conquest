@@ -90,8 +90,6 @@ img {
     flex-grow: 1;
 }
 
-<style type="text/css">
-
 .gallerycontainer{
 position: relative;
 /*Add a height attribute and set to largest image's height to prevent overlaying*/
@@ -112,10 +110,10 @@ border: 1px solid blue;
 
 .thumbnail span{ /*CSS for enlarged image*/
 position: absolute;
-background-color: lightyellow;
+background-color: #ffffff;
 padding: 5px;
 left: -1000px;
-border: 1px dashed gray;
+border: 0 dashed gray;
 visibility: hidden;
 color: black;
 text-decoration: none;
@@ -132,8 +130,6 @@ top: 0;
 left: 230px; /*position where enlarged image should offset horizontally */
 z-index: 50;
 }
-
-</style>
 
 
 
