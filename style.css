@@ -19,6 +19,8 @@ footer {
 }
 
 #wrapper {
+  width:66%;
+  margin: 0 auto;
   padding: 35px;
   background: #fff;
   color:#000;
