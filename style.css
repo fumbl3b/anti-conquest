@@ -19,7 +19,7 @@ footer {
 }
 
 #wrapper {
-  width:66%;
+  width:65%;
   margin: 0 auto;
   padding: 20px;
   background: #fff;
@@ -110,9 +110,10 @@ border: 1px solid white;
 
 .thumbnail span{ /*CSS for enlarged image*/
 position: absolute;
+min-width: 66vw;
 background-color: #ffffff;
 padding: 5px;
-left: -1000px;
+/*left: -1000px;*/
 border: 0 dashed white;
 visibility: hidden;
 color: black;
@@ -127,9 +128,58 @@ padding: 2px;
 .thumbnail:hover span{ /*CSS for enlarged image*/
 visibility: visible;
 top: 0;
-left: 230px; /*position where enlarged image should offset horizontally */
+float: left; /*position where enlarged image should offset horizontally */
 z-index: 50;
 }
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container2 {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
 
 
 

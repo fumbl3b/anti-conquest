@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>anticonquestofbread</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+  </head>
+  <body id="wrapper">
+<h1>anticonquest of bread</h1>
+
+<!-- The grid: four columns -->
+<div class="row">
+  <div class="column">
+    <img src="images/Bread-crumb.JPG" alt="Bread-crumb" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/Bread-line.jpg" alt="Bread-line" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/Bread-pile.JPEG" alt="Bread-pile" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/Dough.JPG" alt="Dough" onclick="myFunction(this);">
+  </div>
+</div>
+
+<!-- The expanding image container -->
+<div class="container2">
+  <!-- Close the image -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+  <!-- Expanded image -->
+  <img id="expandedImg" style="width:100%">
+
+  <!-- Image text -->
+  <div id="imgtext"></div>
+</div>
+
+
+<div class="container">
+	<a href="index.html">BACK HOME</a>
+</div>
+
+  </body>
+</html>
